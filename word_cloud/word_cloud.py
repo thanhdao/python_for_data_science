@@ -24,10 +24,10 @@ for word in file.read().lower().split():
     word = word.replace(",","")
     word = word.replace("\"","")
     word = word.replace("“","")
-    if word not in stopwords:
-        if word not in wordcount:
+    # if word not in stopwords:
+    if word not in wordcount:
             wordcount[word] = 1
-        else:
+    else:
             wordcount[word] += 1
 
 # after building your wordcount, you can then sort it and return the first
